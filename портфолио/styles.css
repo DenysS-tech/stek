@@ -3,6 +3,12 @@ body{
     font-family: var(--font-family);
  
 }
+*,*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
 header{
     margin: auto;
     padding:  45px 0 0 0;  
@@ -221,6 +227,7 @@ padding-right: 90px;
 font-size: 35px;
 line-height: 143%;
 color: #0b132a;
+margin: auto;
 }
 .text-block1-1{
     font-weight: 400;
@@ -366,3 +373,130 @@ color: #4f5665;
 .frame6{
     background-color: #f8f8f8;
 }
+
+/* /* блок с свайпами *  */
+.Comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .arrow_next{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .arrow_back{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrBsvg:hover path {
+    fill: #fff;
+  
+  }
+  
+  .arrBsvg:hover circle {
+    fill: #F53838;
+  }
+  
+  
+  .arrBsvg:active circle {
+    transform: scale(0.9); 
+   
+  }
+  .arrBsvg:active path {
+    transform: scale(0.9); 
+  }
+  
+  
+  
+  .buttonComments{
+    width: 1200px;
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+  }
+  
+  .infoCardPhoto{
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 230px;
+    padding: 30px;
+  }
+  
+  
+  .UsersComm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+    padding-bottom: 10px;
+  }
+  
+  .infoUsers{
+    display: flex;
+    align-items: center;
+  
+  }
+  .geo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .grade{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  
+  .buttons{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .indetfic{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .cardCarouse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    gap: 50px;
+    width: 1200px;
+    overflow-x: scroll;
+  
+  }
+  
+  .cardCarouse::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .infoCardPhoto.active {
+    border: 2px solid #f53838; 
+    border-radius: 10px; 
+  }
+  
+  .identifier{
+    border-radius: 100%;
+    background-color: #dde0e4;
+    width: 15px;
+    height: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .identifier.active{
+    background-color:  #f53838;
+    width: 45px;
+    height: 15px;
+    border-radius: 15px;
+  }
