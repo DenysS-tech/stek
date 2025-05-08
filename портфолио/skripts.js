@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Навигация стрелками
     prevButton.addEventListener('click', () => {
         if (currentIndex > 0) {
-            scrollToCard(currentIndex - 1);
+            scrollToCard(currentIndex - 3);
         }
     });
 
     nextButton.addEventListener('click', () => {
         if (currentIndex < cards.length - 1) {
-            scrollToCard(currentIndex + 1);
+            scrollToCard(currentIndex + 3);
         }
     });
 

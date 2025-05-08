@@ -403,11 +403,11 @@ color: #4f5665;
   
   
   .arrBsvg:active circle {
-    transform: scale(0.9); 
+  
    
   }
   .arrBsvg:active path {
-    transform: scale(0.9); 
+  
   }
   
   
@@ -415,14 +415,14 @@ color: #4f5665;
   .buttonComments{
     width: 1200px;
     display: flex;
-    margin-top: 60px;
+    margin-top: 32px;
     justify-content: space-between;
   }
   
   .infoCardPhoto{
     border: 2px solid #ddd;
     border-radius: 10px;
-    min-width: 400px;
+    min-width: 380px;
     min-height: 230px;
     padding: 30px;
   }
@@ -467,12 +467,11 @@ color: #4f5665;
   
   .cardCarouse{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-    gap: 50px;
+    justify-content: flex-start; /* важно для корректного выравнивания */
+    gap: 30px;
     width: 1200px;
-    overflow-x: scroll;
+    overflow: hidden;
+    padding-top: 48px
   
   }
   
@@ -492,6 +491,7 @@ color: #4f5665;
     height: 15px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.8s ease border-radius 0.8s ease
   }
   
   .identifier.active{
