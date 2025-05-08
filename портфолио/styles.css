@@ -466,13 +466,16 @@ color: #4f5665;
   }
   
   .cardCarouse{
-    display: flex;
-    justify-content: flex-start; /* важно для корректного выравнивания */
-    gap: 30px;
-    width: 1200px;
-    overflow: hidden;
-    padding-top: 48px
+
+  overflow: hidden;
+  width: 1200px;
   
+  }
+  .cardCarouse-inner {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.9s ease; /* плавность */
+    padding-top: 48px
   }
   
   .cardCarouse::-webkit-scrollbar {
@@ -491,7 +494,7 @@ color: #4f5665;
     height: 15px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.8s ease border-radius 0.8s ease
+    transition: all 0.3s ease;
   }
   
   .identifier.active{
