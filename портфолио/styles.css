@@ -367,18 +367,14 @@ color: #4f5665;
     width: 100%;
     background-color: #f8f8f8;
 }
-.frame5{
-    background-color: #f8f8f8;
-}
-.frame6{
-    background-color: #f8f8f8;
-}
+
 
 /* /* блок с свайпами *  */
 .Comments{
     display: flex;
     flex-direction: column;
     align-items: center;
+  
   }
   
   .arrow_next{
@@ -502,4 +498,112 @@ color: #4f5665;
     width: 45px;
     height: 15px;
     border-radius: 15px;
+  }
+.text_comment{
+    font-weight: 400;
+font-size: 16px;
+line-height:  187%;
+color: #0b132a;
+}
+
+.subscribe{
+    width: 1140px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 12px;
+    height: 233px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-block{
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #f8f8f8 50%, #f8f8f8 100%);
+    padding: 65px 0;
+}
+.text-block-sub {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 129%;
+    color: #0b132a;
+    padding-bottom: 10px;
+}
+.subscribe-now{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 410px;
+height: 116px;
+}
+.footer {
+    background: #f8f8f8;
+    padding: 0px 20px 20px 60px;
+    
+    color: #4f5665;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+  
+  .footer-left {
+    flex: 0 0 550px;
+  }
+  
+  .footer-left .logo {
+    width: 150px;
+    margin-bottom: 16px;
+  }
+  
+  .footer-left p {
+    max-width: 320px;
+    line-height: 187%;
+  }
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+  }
+  
+  .footer-columns h4 {
+    font-weight: bold;
+    color: #0b132a;
+    margin-bottom: 20px;
+  }
+  
+  .footer-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-columns li {
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .logo-with-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .social-icons{
+    padding-top: 30px
+  }
+  .footer-left .laslesVpn{
+    color: #000;
+  }
+  .copyright{
+    color: #afb5c0;
   }
